@@ -22,18 +22,25 @@ $(document).ready(function() {
     $(".time-block").each(function() {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
-      console.log("block hour:", blockHour);
+      if (currentHour > parseInt($(this).attr("name"))) {
 
-      // check if we've moved past this time
-      
-      // if the current hour is greater than the block hour
-      // then add class "past"
+        $(this).attr("class", "past");
 
-      // if they are equal
-      // then remove class "past" and add class "present"
+      } else if (currentHour === parseInt($(this).attr("name"))) {
 
-      // else
-      // remove class "past", remove class "present", add class "future"
+        $(this).removeClass("past");
+        $(this).attr("class", "present");
+
+      } else {
+
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).attr("class", "future");
+
+      };
+
+      // var hourInput = $(this).children[0];
+      // console.log(hourInput);
       
     });
   }
