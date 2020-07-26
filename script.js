@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // listen for save button clicks
 
+  // var calObj = localStorage.getItem("Event", JSON.parse(calObj));
+
   $(".saveBtn").on("click", function() {
     // get nearby values
     var value = $(this).siblings(".description").val();
@@ -9,14 +11,18 @@ $(document).ready(function() {
     console.log('value:', value);
     console.log('time:', time);
 
-    // save the value in localStorage as time
+    localStorage.setItem(time, value);
     
+    // calObj.time = value
+
+    // localStorage.setItem("Event", JSON.stringify(calObj));
+
   });
 
   function hourUpdater() {
     // get current number of hours
     var currentHour = moment().hours();
-    console.log('current hour:', currentHour);
+    // console.log('current hour:', currentHour);
 
     // loop over time blocks
     $(".time-block").each(function() {
@@ -24,23 +30,22 @@ $(document).ready(function() {
 
       if (currentHour > parseInt($(this).attr("name"))) {
 
-        $(this).attr("class", "past");
+        $(this).attr("class", "past row time-block");
 
       } else if (currentHour === parseInt($(this).attr("name"))) {
 
         $(this).removeClass("past");
-        $(this).attr("class", "present");
+        $(this).attr("class", "present row time-block");
 
       } else {
 
         $(this).removeClass("past");
         $(this).removeClass("present");
-        $(this).attr("class", "future");
+        $(this).attr("class", "future row time-block");
 
       };
 
-      // var hourInput = $(this).children[0];
-      // console.log(hourInput);
+      
       
     });
   }
@@ -49,6 +54,23 @@ $(document).ready(function() {
 
   // set up interval to check if current time needs to be updated
   // which means execute hourUpdater function every 15 seconds
+
+  function dataRefresh() {
+    setInterval(hourUpdater, 15000)
+    
+    $("time-block").each(function() {
+
+    var retrievedValue = JSON.parse(localStorage.getItem());
+    retrievedValue = value;
+
+      $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+
+    })
+    
+    
+  }
+
+ 
 
   // load any saved data from localStorage
   
