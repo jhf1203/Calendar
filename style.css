@@ -23,7 +23,7 @@ textarea {
   resize: none;
 
   /* Typography */
-  color: #fcbe59;
+  color: #1c0e0b;
 
   /* Aesthetic */
   background: transparent;
@@ -242,19 +242,41 @@ textarea:hover {
 
 /* Optimizing for mobile phones */ 
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 
 .display-3 {
 
+  /* Box-Model */
+  margin-top:10px;
+
+  /* Positioning */
+  width:100%;
+
   /* Typography */
-  font-size:30px;
-};
+  font-size:45px;
+  text-align:center;
+}
 
 .lead {
 
   /* Box-Model */
   padding-top:0px;
   margin-right:0px;
+  margin-left:0px;
+
+  /* Positioning  */
+  width:100%;
+
+  /* Typography */
+  text-align:center;
+}
+
+.container {
+  
+  margin-top:120px;
+  margin-left:0px;
+  margin-right:0px;
+  max-width:100%!important;
 }
 
 .hour {
@@ -283,6 +305,10 @@ textarea:hover {
 
   /* Positioning */
   width:20%;
+}
+
+.navbar {
+  padding-right:0;
 }
 
 }
