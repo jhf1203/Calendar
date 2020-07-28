@@ -16,14 +16,14 @@ textarea {
 
   /* Box-Model */
   border: none;
-  border-left: 1px solid black;
+  border-left: 1px solid #1c0e0b;
   padding: 10px;
 
   /* Positioning */
   resize: none;
 
   /* Typography */
-  color: #000000;
+  color: #fcbe59;
 
   /* Aesthetic */
   background: transparent;
@@ -53,7 +53,7 @@ h5 {
   z-index:0;
   
   /*Aesthetic */
-  background-image: url("./Assets/plate-1.jpg"); 
+  background-image: url("./assets/plate-1.jpg"); 
   opacity:0.7;
 }
 
@@ -68,6 +68,7 @@ h5 {
 
   /* Typography */
   font-size:50px;
+  font-weight:500;
 }
 
 .lead {
@@ -129,7 +130,7 @@ h5 {
   padding-top:25px;
 
   /* Typography */
-  color: #000000;
+  color: #1c0e0b;
 
   /* Aesthetic */
   background-color:transparent; 
@@ -141,7 +142,7 @@ h5 {
 .future {
 
   /* Box-Model */
-  border:2px solid black;
+  border:2px solid #1c0e0b;
   border-radius:5px;
   margin-bottom:5px;
 
@@ -164,7 +165,7 @@ textarea:hover {
   color: white;
 
   /* Aesthetic */
-  background-color:#9db34d;
+  background-color:#95a83d;
 }
 
 .present {
@@ -173,7 +174,7 @@ textarea:hover {
   color: white;
 
   /* Aesthetic */
-  background-color:#e23802;
+  background-color:#ef4e08;
 }
 
 .future {
@@ -182,13 +183,13 @@ textarea:hover {
   color: white;
 
   /* Aesthetic */
-  background-color:#fac05b;
+  background-color:#fcbe59;
 }
 
 .saveBtn {
 
   /* Box-Model */
-  border-left: 1px solid black;
+  border-left: 1px solid #1c0e0b;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 
@@ -200,7 +201,7 @@ textarea:hover {
   line-height:12px;
 
   /* Aesthetic */
-  background-color: black;
+  background-color: #1c0e0b;
 }
 
 .icon {
