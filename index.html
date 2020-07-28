@@ -4,30 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+     <!-- Favicon -->
+     <link rel="icon" href="./assets/NC-Logo.ico" type="image/x-icon">
+
+    <!-- Bootstrap CDN -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+
+    <!-- FontAwesome CDN -->
+    <link href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+    
+    <!-- Google Fonts CDN -->
     <link 
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Lato:wght@300&display=swap" 
     rel="stylesheet">
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Local Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
 
+    <!-- Background Image -->
     <div class="bkgd"></div>
 
     <header class="nav">
@@ -37,38 +41,29 @@
 
 
     <div class="container">
-      <!-- Timeblocks go here -->
 
       <!-- 9AM -->
       <div id="hour-9" class="row time-block" name="9">
         <div class="col-md-1 hour">9AM</div>
-
         <textarea class="col-md-10 description" name="9"></textarea>
-
         <button class="btn saveBtn col-md-1" name="9"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
-          
-
       </div>
 
       <!-- 10AM -->
       <div id="hour-10" class="row time-block" name="10">
         <div class="col-md-1 hour">10AM</div>
-
         <textarea class="col-md-10 description" name="10"></textarea>
-
         <button class="btn saveBtn col-md-1" name="10"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
-        </button>         
+        </button>
       </div>
 
       <!-- 11AM -->
       <div id="hour-11" class="row time-block" name="11">
         <div class="col-md-1 hour">11AM</div>
-
         <textarea class="col-md-10 description" name="11"></textarea>
-
         <button class="btn saveBtn col-md-1" name="11"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button>        
@@ -77,9 +72,7 @@
       <!-- 12PM -->
       <div id="hour-12" class="row time-block" name="12">
         <div class="col-md-1 hour">12PM</div>
-
         <textarea class="col-md-10 description" name="12"></textarea>
-
         <button class="btn saveBtn col-md-1" name="12"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -88,9 +81,7 @@
       <!-- 1PM -->
       <div id="hour-13" class="row time-block" name="13">
         <div class="col-md-1 hour">1PM</div>
-
         <textarea class="col-md-10 description" name="13"></textarea>
-
         <button class="btn saveBtn col-md-1" name="13"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -99,9 +90,7 @@
       <!-- 2PM -->
       <div id="hour-14" class="row time-block" name="14">
         <div class="col-md-1 hour">2PM</div>
-
         <textarea class="col-md-10 description" name="14"></textarea>
-
         <button class="btn saveBtn col-md-1" name="14"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -110,9 +99,7 @@
       <!-- 3PM -->
       <div id="hour-15" class="row time-block" name="15">
         <div class="col-md-1 hour">3PM</div>
-
         <textarea class="col-md-10 description" name="15"></textarea>
-
         <button class="btn saveBtn col-md-1" name="15"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -121,9 +108,7 @@
       <!-- 4PM -->
       <div id="hour-16" class="row time-block" name="16">
         <div class="col-md-1 hour">4PM</div>
-
         <textarea class="col-md-10 description" name="16"></textarea>
-
         <button class="btn saveBtn col-md-1" name="16"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -132,9 +117,7 @@
       <!-- 5PM -->
       <div id="hour-17" class="row time-block" name="17">
         <div class="col-md-1 hour">5PM</div>
-
         <textarea class="col-md-10 description" name="17"></textarea>
-
         <button class="btn saveBtn col-md-1" name="17"><img class="icon" src="./assets/tupperware.png">
           <p class="btn-text">save for later</p>
         </button> 
@@ -142,9 +125,50 @@
 
     </div>
 
+    <!-- This is my universal footer that lives in my projects that will be going into my portfolio -->
+    <footer>
+      <nav class="navbar navbar-expand-sm navbar-dark sticky-bottom navbar-custom navbar-index">
+      
+        <!-- Toggler for responsiveness -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#footerBar" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon footer-toggler-icon"></span>
+        </button>
+  
+        <!-- Nav items with external links -->
+        <!-- Credit to icons: https://fontawesome.bootstrapcheatsheets.com/# -->
+        <div class="collapse navbar-collapse justify-content-end" id="footerBar">
+          <ul class="navbar-nav d-flex align-items-end footer-nav">
+            <li class="nav-item"><h5>Jim Faulkner | 2020 |</h5>
+            </li>
+            <li class="nav-item">
+              <a href="https://jhf1203.github.io" target="_blank" 
+              class="btn btn-sm" role="button" aria-pressed="true"> 
+              <i class="fa fa-user"></i></a>
+            </li>        
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/jim-faulkner-13476534" target="_blank" 
+              class="btn btn-sm" role="button" aria-pressed="true"> 
+              <i class="fa fa-linkedin-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/jhf1203" target="_blank" 
+              class="btn btn-sm" role="button" aria-pressed="true"> 
+              <i class="fa fa-github"></i></a>
+            </li>         
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!-- Moment CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
+    <!-- Local Script -->
     <script src="script.js"></script>
   </body>
 </html>

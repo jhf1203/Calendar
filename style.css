@@ -1,30 +1,44 @@
 body {
+
+  /* Typography */
   font-family: 'Lato', sans-serif;  
   font-size: 16px;
   line-height: 1;
-  background-size: 100%;
 }
 
 h1 {
 
-font-family: 'Cormorant Garamond', serif;
-
-
+  /* Typography */
+  font-family: 'Cormorant Garamond', serif;
 }
 
-textarea{
-  background: transparent;
+textarea { 
+
+  /* Box-Model */
   border: none;
-  resize: none;
-  color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+
+  /* Positioning */
+  resize: none;
+
+  /* Typography */
+  color: #000000;
+
+  /* Aesthetic */
+  background: transparent;
 }
 
 header {
 
+  /* Positioning */
   height:0px;
-  opacity:1;
+}
+
+h5 {
+
+  /* Typography */
+  font-size:14px;
 }
 
 .bkgd {
@@ -45,56 +59,80 @@ header {
 
 .display-3 {
 
-  z-index:1;
-  font-size:50px;
+  /* Box-Model */
   margin-top:30px;
   margin-left:50px;
 
+  /* Positioning */
+  z-index:1;
+
+  /* Typography */
+  font-size:50px;
 }
 
 .lead {
 
-  z-index:1;
+  /* Box-Model */
   padding-top:70px;
   margin-left:580px;
+
+  /* Positioning */
+  z-index:1;
+
+  /* Typography */
   font-weight:bold;
 }
 
 .container {
 
+  /* Box-Model */
   margin-top:100px;
 }
 
-.description{
+.description {
+
+  /* Aesthetic */
   white-space: pre-wrap;
 }
 
-.time-block{
-  /* text-align: center; */
+.time-block {
+
+  /* Box-Model */
   border-radius: 15px;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
+
+  /* Box-Model */
   border-top: 1px solid white;
+
+  /* Positioning */
+  height: 80px;
+
+  /* Aesthetic */
+  white-space: pre-wrap;
   opacity:.8;
   background-color:white;
 }
 
 .col-md-1 {
 
+  /* Typography */
   font-size: 25px;
   text-align:center;
   
-
 }
 
 .hour {
-  background-color:transparent;
-  color: #000000;
+
+  /* Box-Model */
   padding-top:25px;
-  
+
+  /* Typography */
+  color: #000000;
+
+  /* Aesthetic */
+  background-color:transparent; 
 }
 
 
@@ -102,6 +140,7 @@ header {
 .present,
 .future {
 
+  /* Box-Model */
   border:2px solid black;
   border-radius:5px;
   margin-bottom:5px;
@@ -113,41 +152,60 @@ header {
 .future:hover,
 textarea:hover {
 
+  /* Aesthetic */
   opacity:0.9;
   transition-timing-function: ease-in;
   font-weight:bold;
 }
 
 .past {
-  /* background-color: #d3d3d3; */
+
+  /* Typography */
   color: white;
+
+  /* Aesthetic */
   background-color:#9db34d;
 }
 
 .present {
-  /* background-color: #ff6961; */
+
+  /* Typography */
   color: white;
+
+  /* Aesthetic */
   background-color:#e23802;
 }
 
 .future {
-  /* background-color: #77dd77; */
+
+  /* Typography */
   color: white;
+
+  /* Aesthetic */
   background-color:#fac05b;
 }
 
 .saveBtn {
+
+  /* Box-Model */
   border-left: 1px solid black;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: black;
+
+  /* Positioning */
+  height:76px;
+
+  /* Typography */
   color: white;
   line-height:12px;
-  height:76px;
+
+  /* Aesthetic */
+  background-color: black;
 }
 
 .icon {
 
+  /* Positioning */
   height:30px;
   width:30px;
 
@@ -155,10 +213,13 @@ textarea:hover {
 
 .btn-text {
 
+  /* Typography */
   font-size:12px;
 }
 
 .btn:hover {
+
+  /* Aesthetic */
   color:white;
   font-weight:bold;
 }
@@ -166,11 +227,61 @@ textarea:hover {
 
 
 .saveBtn i:hover {
+
+/* Typography */
   font-size: 20px;
-  }
+}
 
-#hour-9 {
+.navbar {
+    
+  /* Box-Model */
+  padding-right:55px;
+}
 
-  /* margin-top:100px; */
+
+/* Optimizing for mobile phones */ 
+
+@media only screen and (max-width:425px) {
+
+.display-3 {
+
+  /* Typography */
+  font-size:30px;
+};
+
+.lead {
+
+  /* Box-Model */
+  padding-top:0px;
+  margin-right:0px;
+}
+
+.hour {
+
+  /* Box-Model */
+  padding-left:2px;
+
+  /* Positioning */
+  width:12%;
+
+  /* Typography */
+  font-size:15px;
+  font-weight:bold;
+
+  /* Aesthetic */
+  background-color:white!important;
+}
+
+.description {
+
+  /* Positioning */
+  width:68%;
+}
+
+.saveBtn {
+
+  /* Positioning */
+  width:20%;
+}
 
 }
