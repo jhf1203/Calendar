@@ -8,8 +8,8 @@ $(document).ready(function() {
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-    console.log('value:', value);
-    console.log('time:', time);
+    console.log('value:' + value);
+    console.log('time:' + time);
 
     localStorage.setItem(time, value);
     
@@ -18,6 +18,8 @@ $(document).ready(function() {
     // localStorage.setItem("Event", JSON.stringify(calObj));
 
   });
+
+
 
   function hourUpdater() {
     // get current number of hours
@@ -55,20 +57,38 @@ $(document).ready(function() {
   // set up interval to check if current time needs to be updated
   // which means execute hourUpdater function every 15 seconds
 
-  function dataRefresh() {
+  // function dataRefresh() {
     setInterval(hourUpdater, 15000)
     
-    $("time-block").each(function() {
+    // $(".time-block").each(function() {
 
-    var retrievedValue = JSON.parse(localStorage.getItem());
-    retrievedValue = value;
+    // var retrievedValue = JSON.parse(localStorage.getItem());
+    // retrievedValue = value;
 
-      $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    //   $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+
+    // })
+
+    $(".description").each(function() {
+
+      // console.log("this is value" + value);
+      // console.log("this is time " + time);
+      // var savedData = JSON.parse(localStorage.getItem('value:'));
+      // var savedTime = JSON.parse(localStorage.getItem('time:'));
+      // console.log("this is saved data" + savedData);
+      // console.log("this is saved time" + savedTime);
+
+      var savedValue = localStorage.getItem($(this).parent().attr("id"));
+      console.log(savedValue);
+
+      $(this).val(savedValue);
 
     })
     
     
-  }
+  
+
+  // dataRefresh();
 
  
 
