@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  
+
   // This event ensures that the click of a save button references...
   // ...its correct textarea and saves and labels the item appropriately
 
@@ -21,7 +21,6 @@ $(document).ready(function() {
     var currentHour = moment().hours();
 
     $(".time-block").each(function() {
-      var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
       if (currentHour > parseInt($(this).attr("name"))) {
 
