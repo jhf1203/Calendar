@@ -1,4 +1,4 @@
-The calendar assignment really helped me hone my JavaScript skills as well as learn a new tool in Moment.  Please see below for the project requirements and how I achieved them:
+## User Story & Acceptance Criteria
 _____________________________________________________
 
 AS AN employee with a busy schedule:
@@ -14,7 +14,16 @@ GIVEN I am using a daily planner to create a schedule:
 
 _____________________________________________________
 
-The Code:
+## Overview:
+
+![Demo GIF](./assets/calendar-demo.gif)
+
+New Languages/Skills Used:  JavaScript | intervals, local storage
+
+_____________________________________________________
+
+
+## The Code:
 
 Our client's needs are straightforward.  For this assignment I was provided a bit of starter script to begin working.  My two main tasks for this assignment were to ensure that the rows were color-coded properly, and that the content is able to be saved and retrieved correctly from Local Storage.  Besides displaying the current date (which was already provided) the entirety of the script works to accomplish the above two parameters.
 
@@ -31,13 +40,13 @@ Retrieving the time is almost the exact inverse of setting the time, except ther
 
 _____________________________________________________
 
-The Content:
+## The Content:
 
 The third word in the project requirements was "simple," which is a priority for anyone with a busy schedule.  The client wants to easily enter, save, and view items for their daily schedule and the formatting provided in the starter HTML was a great foundation for that.  Red is the current hour because it's happening right now so it's the most urgent need, with green being more calm because it represents a task we've already accomplished for the day (hopefully!).  These both tie in with the "food" theme that I chose for this calendar (both with the header text, the background image, and the tupperware icons) and complement each other for an overall theme that's existent but simple and in service to the needed simplicity of the application.
 _____________________________________________________
 
 
-Summary:
+## Summary:
 
 I felt good leaving this project.  With it being my second one using the jQuery library I felt much more in tune with syntax and placement with fewer characters to type out in my commands.  It was my first time using a for each loop and understanding its benefit as well.  My biggest challenge on this project was local storage, the cadence for which I still struggled with despite having it in the last project.  I had some great direction from our TAs, and for the first time was able to look at other examples of past class activities with local storage in action and better interpret how I would be able to make it functional.
 
